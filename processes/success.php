@@ -1,10 +1,10 @@
 <?php
 require_once 'dbcon.php';
 
-// Get a reference to the Database object
+// Getting a reference to the Database object
 $db = new Database();
 
-// Prepare and execute the SQL query
+// Preparing and executing the SQL query
 try {
     $sqlquery = $db->getPdo()->prepare("SELECT * FROM student_details ORDER BY student_id ASC");
     $sqlquery->execute();

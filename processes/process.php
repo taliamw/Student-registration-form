@@ -14,7 +14,7 @@ try {
         // Register the student
         $studentRegistration->registerStudent($name, $email);
 
-        // Redirect to a success page or display a success message
+        // Redirect to a success page and view registered
         header("Location: success.php");
     }
 } catch (PDOException $e) {
