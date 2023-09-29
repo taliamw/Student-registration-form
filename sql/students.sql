@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 27, 2023 at 08:25 PM
+-- Generation Time: Sep 29, 2023 at 10:47 AM
 -- Server version: 10.4.28-MariaDB
--- PHP Version: 8.0.28
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,13 +24,13 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `student_detalis`
+-- Table structure for table `student_details`
 --
 
-CREATE TABLE `student_detalis` (
-  `student_id` int(11) NOT NULL,
-  `student_name` varchar(50) NOT NULL,
-  `student_email` varchar(50) NOT NULL
+CREATE TABLE `student_details` (
+  `student_id` int(20) NOT NULL,
+  `student_name` varchar(100) NOT NULL,
+  `student_email` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -38,9 +38,9 @@ CREATE TABLE `student_detalis` (
 --
 
 --
--- Indexes for table `student_detalis`
+-- Indexes for table `student_details`
 --
-ALTER TABLE `student_detalis`
+ALTER TABLE `student_details`
   ADD PRIMARY KEY (`student_id`),
   ADD UNIQUE KEY `student_email` (`student_email`);
 
@@ -49,10 +49,10 @@ ALTER TABLE `student_detalis`
 --
 
 --
--- AUTO_INCREMENT for table `student_detalis`
+-- AUTO_INCREMENT for table `student_details`
 --
-ALTER TABLE `student_detalis`
-  MODIFY `student_id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `student_details`
+  MODIFY `student_id` int(20) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
