@@ -20,7 +20,10 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Success</title>
 </head>
+
+<link rel="stylesheet" href="../css/style.css">
 <a href="../index.html">Home</a>
+
 <body>
     <p>Registration was a success!</p>
     <br>
